@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-01T19:15:53.582726+00:00'
+generated-at: '2026-10-01T23:20:09.935665+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 10
   server: jp-1.gsafevpnapi.com
@@ -111,18 +111,6 @@ proxies:
     headers:
       Host: bounded-crammed.video-streams.org
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -140,18 +128,6 @@ proxies:
     mode: stream-one
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: bounded-crammed.video-streams.org
   port: 443
@@ -167,6 +143,30 @@ proxies:
     path: /ws
     headers:
       Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 91.240.86.70
@@ -217,13 +217,6 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.183.138
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: ru1.xiaoliyu.cyou
   port: 18333
@@ -232,6 +225,13 @@ proxies:
   auth: 19f72087-4591-4d72-930b-2697078ec2be
   sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.183.138
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
+  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 188.255.236.84
   port: 8443
@@ -364,16 +364,16 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇩🇪 德国 | DEU 3
   - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 6
   - 🇹🇼 🇨🇳 台湾 | TWN 2
@@ -410,20 +410,20 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 12
+  - 🇯🇵 日本 | JPN 10
+  - 🇸🇬 新加坡 | SGP 11
+  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
