@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T14:33:47.396763+00:00'
+generated-at: '2026-10-03T18:32:01.985227+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: concrete-aardvark.rooster465.autos
@@ -108,20 +108,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: evolving-platypus.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: evolving-platypus.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: real-cardinal.rooster465.autos
   port: 443
   type: trojan
   password: UX82473651
   sni: real-cardinal.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: evolving-platypus.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
   skip-cert-verify: true
   udp: true
 - name: 🇭🇰 香港 | HKG
@@ -154,26 +154,6 @@ proxies:
   auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 4
-  server: 129.213.91.185
-  port: 35013
-  type: hysteria2
-  password: 4291c983-c520-46ac-82cc-48f14bef573f
-  auth: 4291c983-c520-46ac-82cc-48f14bef573f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: happy-gibbon.rooster465.autos
   port: 443
@@ -190,6 +170,14 @@ proxies:
   sni: guided-ferret.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 129.213.91.185
+  port: 35013
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  auth: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 5
   server: 38.180.254.125
   port: 9443
@@ -203,6 +191,18 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 34.29.203.135
   port: 443
@@ -223,6 +223,19 @@ proxies:
   sni: kind-stork.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇿🇦 南非 | ZAF
+  server: 34.35.58.153
+  port: 443
+  type: vless
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  tls: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+    short-id: 89b3a20484eb43ec
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 179.254.109.69
   port: 443
@@ -235,19 +248,6 @@ proxies:
     short-id: d3a09fd1
   servername: m.swegg.daxaryx.fun
   client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇿🇦 南非 | ZAF
-  server: 34.35.58.153
-  port: 443
-  type: vless
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  tls: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
@@ -329,18 +329,6 @@ proxies:
   sni: evolving-ewe.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇰🇷 韩国 | KOR 8
-  server: 34.47.83.187
-  port: 443
-  type: vless
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  tls: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-    short-id: 8685f8b4d9f4f51e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -355,6 +343,18 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: true
   udp: true
+- name: 🇰🇷 韩国 | KOR 8
+  server: 34.47.83.187
+  port: 443
+  type: vless
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  tls: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇩🇪 德国 | DEU 3
   server: gr-test.xelfona.ir
   port: 49548
@@ -384,14 +384,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: loved-shark.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: defrnode.jumpernode.site
   port: 443
@@ -406,6 +398,25 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL 2
+  server: loved-shark.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 137.23.3.238
+  port: 20000
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  auth: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  ports: 20000-30000
 - name: 🇮🇪 爱尔兰 | IRL
   server: 198.55.102.59
   port: 4443
@@ -420,17 +431,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 137.23.3.238
-  port: 20000
-  type: hysteria2
-  password: b42d90fa667942aebc734d60
-  auth: b42d90fa667942aebc734d60
-  sni: rmgyvpn.rest
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  ports: 20000-30000
 - name: 🇩🇪 德国 | DEU 6
   server: speedtest.org
   port: 443
@@ -460,16 +460,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: 152.67.75.161
-  port: 443
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  auth: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇩🇪 德国 | DEU 11
   server: de1.xiaoliyu.cyou
   port: 4433
@@ -490,6 +480,16 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
+- name: 🇨🇭 瑞士 | CHE
+  server: 152.67.75.161
+  port: 443
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  auth: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇸🇪 瑞典 | SWE
   server: 144.31.235.214
   port: 443
@@ -504,20 +504,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇪🇪爱沙尼亚丨yoyapai.com
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: pretty-rat.rooster465.autos
   port: 443
   type: trojan
   password: UX82473651
   sni: pretty-rat.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇪爱沙尼亚丨yoyapai.com
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
   udp: true
 - name: 🇫🇷 法国 | FRA
@@ -541,19 +541,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 31.77.168.33
-  port: 443
-  type: trojan
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  sni: d3-de2.cloud-cdn.xyz
-  alpn:
-  - h2
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
-  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA 2
   server: latinki.pumpkinpie.study
   port: 443
@@ -567,6 +554,19 @@ proxies:
   servername: latinki.pumpkinpie.study
   client-fingerprint: random
   network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 31.77.168.33
+  port: 443
+  type: trojan
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  sni: d3-de2.cloud-cdn.xyz
+  alpn:
+  - h2
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
   udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 185.28.47.28
@@ -638,20 +638,20 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇰🇷 韩国 | KOR 6
-  - 🇩🇪 德国 | DEU 2
   - 🇿🇦 南非 | ZAF
+  - 🇩🇪 德国 | DEU 2
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇰🇷 韩国 | KOR 2
   - 🇩🇪 德国 | DEU 7
@@ -659,27 +659,27 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 9
-  - 🇰🇷 韩国 | KOR 8
   - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇰🇷 韩国 | KOR 8
   - 🇩🇪 德国 | DEU 3
   - 🇰🇷 韩国 | KOR 5
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇮🇪 爱尔兰 | IRL 2
   - 🇩🇪 德国 | DEU 5
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇮🇪 爱尔兰 | IRL 2
   - 🇦🇺 澳大利亚 | AUS
+  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 8
-  - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 11
   - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇨🇭 瑞士 | CHE
   - 🇸🇪 瑞典 | SWE
-  - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇰🇷 韩国 | KOR
+  - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 9
-  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 10
@@ -713,28 +713,28 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇺🇸 美国 | USA 3
+  - 🇯🇵 日本 | JPN 5
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇯🇵 日本 | JPN 10
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
+  - 🇯🇵 日本 | JPN 7
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
