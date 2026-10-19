@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-19T01:55:54.483499+00:00'
+generated-at: '2026-10-19T07:01:04.977311+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: 47.76.57.83
@@ -97,6 +97,20 @@ proxies:
       Host: notls.lukongtou.eu.org
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com_16
+  type: vless
+  server: tk1.high-speed-test-56424.me
+  port: 443
+  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  servername: aws.amazon.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
+    short-id: 21270a66
+  skip-cert-verify: false
+  udp: true
 - name: 🇺🇸US美國丨yoyapai.com_9
   type: vless
   server: 185.193.29.123
@@ -125,43 +139,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com_16
-  type: vless
-  server: tk1.high-speed-test-56424.me
-  port: 443
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-  servername: aws.amazon.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  type: trojan
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com_13
-  type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
-  network: ws
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: starlink-ft.251313.xyz
   port: 443
@@ -184,6 +161,29 @@ proxies:
     path: /vlessvina
     headers:
       Host: vn11vina.210z.dev
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com_13
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  network: ws
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  type: trojan
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: vless-colo.whuiy.xyz
@@ -211,21 +211,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com_12
-  type: vless
-  server: 8.35.211.73
-  port: 2087
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  network: ws
-  servername: d39333476.pages.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /resource
-    headers:
-      Host: d39333476.pages.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 64.188.66.181
   port: 443
@@ -240,19 +225,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧GB英國丨yoyapai.com
+- name: 🇺🇸US美国丨yoyapai.com_12
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: 8.35.211.73
+  port: 2087
+  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
   network: ws
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: d39333476.pages.dev
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /resource
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: d39333476.pages.dev
   skip-cert-verify: false
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
@@ -293,6 +278,21 @@ proxies:
     path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: dnld.chaqalli.com
+  udp: true
+- name: 🇬🇧GB英國丨yoyapai.com
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  network: ws
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: ru.msk.nurcloud.org
@@ -434,6 +434,16 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 152.67.115.203
+  port: 443
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  auth: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇩🇪_德国丨yoyapai.com
   type: vless
   server: 46.101.253.244
@@ -449,16 +459,6 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: false
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 152.67.115.203
-  port: 443
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  auth: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇵🇱 波兰 | POL
   server: site.teslamotor.site
   port: 20001
@@ -466,6 +466,14 @@ proxies:
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   tls: false
   network: tcp
+  udp: true
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: de7.dedushka.top
+  port: 443
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de7.dedushka.top
+  skip-cert-verify: true
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
@@ -480,14 +488,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: de7.dedushka.top
-  port: 443
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
-  skip-cert-verify: true
   udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 147.15.108.14
@@ -522,6 +522,14 @@ proxies:
     headers:
       Host: cdn-01.funvideos.video
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: connect.hondamotor.site
+  port: 10002
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  tls: false
+  network: tcp
+  udp: true
 - name: ❓未知丨yoyapai.com_14
   type: vless
   server: 185.148.107.40
@@ -535,14 +543,6 @@ proxies:
       Host: vms.lifetime55.workers.dev
   skip-cert-verify: false
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: connect.hondamotor.site
-  port: 10002
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -553,20 +553,20 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵JP日本丨yoyapai.com_1
+  - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸US美國丨yoyapai.com_9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_13
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com_13
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com_12
   - 🇺🇸 美国 | USA 2
-  - 🇬🇧GB英國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com_12
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇮🇷 伊朗 | IRN
+  - 🇬🇧GB英國丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
@@ -577,16 +577,16 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - ❓未知丨yoyapai.com_33
   - ❓未知丨yoyapai.com_1
-  - 🇩🇪_德国丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
+  - 🇩🇪_德国丨yoyapai.com
   - 🇵🇱 波兰 | POL
-  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇷🇴 罗马尼亚 | ROU
+  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇧🇷 巴西 | BRA
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 2
-  - ❓未知丨yoyapai.com_14
   - 🇬🇧 英国 | GBR
+  - ❓未知丨yoyapai.com_14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -607,30 +607,30 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸US美國丨yoyapai.com_9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸US美国丨yoyapai.com_16
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_13
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com_13
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com_12
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 3
+  - 🇯🇵JP日本丨yoyapai.com_1
+  - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸US美國丨yoyapai.com_9
-  - 🇺🇸US美国丨yoyapai.com_12
-  - 🇺🇸 美国 | USA 8
-  - 🇬🇧GB英國丨yoyapai.com
-  - ❓未知丨yoyapai.com_14
-  - 🇩🇪DE德国丨yoyapai.com_13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
