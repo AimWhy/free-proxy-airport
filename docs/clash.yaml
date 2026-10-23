@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-23T17:32:42.570737+00:00'
+generated-at: '2026-10-23T20:42:16.343626+00:00'
 proxies:
 - name: 🇺🇸US美国丨yoyapai.com_14
   type: vless
@@ -23,12 +23,17 @@ proxies:
     short-id: 21270a66
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸US美国丨yoyapai.com_1
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 172.64.146.66
@@ -43,6 +48,13 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 44.205.20.135
@@ -71,18 +83,6 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com_1
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: nl5.himoy.space
@@ -133,6 +133,18 @@ proxies:
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
+- name: ❓未知丨yoyapai.com_46
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  servername: addons.mozilla.org
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  skip-cert-verify: false
+  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: l415ng0o.himoy.space
   port: 443
@@ -146,18 +158,6 @@ proxies:
   servername: l415ng0o.himoy.space
   client-fingerprint: firefox
   network: tcp
-- name: ❓未知丨yoyapai.com_46
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  servername: addons.mozilla.org
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  skip-cert-verify: false
-  udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: 153.56.210.134
   port: 34121
@@ -168,13 +168,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 13.209.84.147
   port: 443
@@ -190,29 +183,18 @@ proxies:
       Host:
       - play.googleapis.com
   udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_21
-  type: vmess
-  server: hk2.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: server15.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /asivewritten
-    headers:
-      Host: server15.9966338.xyz
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 15.224.60.172
-  port: 22222
+- name: 🇱🇰LK斯里兰卡丨yoyapai.com
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
   tls: false
-  network: tcp
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  skip-cert-verify: false
   udp: true
 - name: 🇳🇱NL荷兰丨yoyapai.com
   type: vless
@@ -231,17 +213,18 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: 🇱🇰LK斯里兰卡丨yoyapai.com
+- name: ❓未知丨yoyapai.com_12
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
   skip-cert-verify: false
   udp: true
 - name: ❓未知丨yoyapai.com_48
@@ -291,24 +274,22 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com_1
   - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪DE德国丨yoyapai.com_10
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
-  - 🇪🇪 爱沙尼亚 | EST
   - ❓未知丨yoyapai.com_46
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇹🇷 土耳其 | TUR
-  - 🇮🇹 意大利 | ITA
   - 🇰🇷 韩国 | KOR
-  - 🇨🇦CA加拿大丨yoyapai.com_21
-  - 🇫🇷 法国 | FRA
-  - 🇳🇱NL荷兰丨yoyapai.com
   - 🇱🇰LK斯里兰卡丨yoyapai.com
+  - 🇳🇱NL荷兰丨yoyapai.com
+  - ❓未知丨yoyapai.com_12
   - ❓未知丨yoyapai.com_48
   - 🇱🇻 拉脱维亚 | LVA
   - 🇪🇸 西班牙 | ESP
@@ -318,31 +299,31 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
