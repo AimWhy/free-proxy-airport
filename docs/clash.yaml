@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-24T21:17:12.789170+00:00'
+generated-at: '2026-10-24T23:27:09.964238+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 4
   server: 104.18.35.86
@@ -106,20 +106,6 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_10
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: 194.26.141.223
   port: 443
@@ -134,18 +120,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: ❓未知丨yoyapai.com_61
+- name: 🇩🇪DE德国丨yoyapai.com_10
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  servername: www.lamer.com.sg
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: ios
   reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
@@ -283,14 +269,6 @@ proxies:
     headers:
       Host: platform128.halalkhor.info
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 54.180.151.244
-  port: 443
-  type: hysteria2
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇳🇱NL荷兰丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -360,9 +338,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸 美国 | USA 2
-  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇪🇪 爱沙尼亚 | EST 2
-  - ❓未知丨yoyapai.com_61
+  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇪🇪 爱沙尼亚 | EST
   - ❓未知丨yoyapai.com_46
@@ -373,7 +350,6 @@ proxy-groups:
   - 🇮🇷伊朗丨yoyapai.com
   - 🇨🇦CA加拿大丨yoyapai.com_21
   - 🇲🇾 马来西亚 | MYS
-  - 🇰🇷 韩国 | KOR
   - 🇳🇱NL荷兰丨yoyapai.com
   - ❓未知丨yoyapai.com_12
   - ❓未知丨yoyapai.com_48
@@ -417,8 +393,7 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com_1
   - 🇸🇬 新加坡 | SGP 4
   - ❓未知丨yoyapai.com_48
-  - 🇩🇪DE德国丨yoyapai.com_10
-  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
