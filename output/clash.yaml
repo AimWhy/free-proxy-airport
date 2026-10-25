@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-25T15:06:24.775848+00:00'
+generated-at: '2026-10-25T18:29:15.354691+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: tjflb.m2k699.com
@@ -31,21 +31,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.243.153.153
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: tjrb.m2k699.com
   port: 24999
@@ -53,39 +38,6 @@ proxies:
   password: 29086912-33e4-4e06-ba2b-60f1a195864f
   sni: www.itunes.com
   skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: funagfrdfs.alixxplay.com
-  port: 35544
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: 25c79e5856c7
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 104.18.35.86
@@ -100,14 +52,6 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 13.212.245.120
-  port: 443
-  type: hysteria2
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 13.215.227.70
   port: 2377
@@ -133,37 +77,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: US122207.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 98267316-8f95-45fc-a1bb-52ba34c1e6df
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 104.18.35.86
+  port: 2096
+  type: trojan
+  password: 123456
+  sni: 321dfbc6.uir-9i6.pages.dev
   skip-cert-verify: true
-  servername: US122207.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US122207.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 143.198.76.78
-  port: 443
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: 321dfbc6.uir-9i6.pages.dev
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com_14
   type: vless
@@ -178,6 +103,20 @@ proxies:
     public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
     short-id: 21270a66
   skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 143.198.76.78
+  port: 443
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: mira.sheikhiedu.ir
@@ -200,24 +139,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: US032024.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: bd08cc71-b38d-498c-b67f-12410c72d099
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032024.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032024.ssgreen.org
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.168.6.236
   port: 44443
@@ -237,55 +158,6 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: US032020.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 6d9380a0-ca0b-4202-9eed-20ff588cf022
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032020.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032020.ssgreen.org
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: US032021.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: e3618355-34af-4f6e-8bbd-b84ed4f2ec32
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: US032021.ssgreen.org
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032021.ssgreen.org
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 6
-  server: 45.151.71.169
-  port: 443
-  type: vless
-  uuid: 0b6a937e-5b0e-49ca-b31e-f03f290e97cf
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: abuse.ozon.ru
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 45.151.71.165
@@ -327,20 +199,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_10
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
   udp: true
 - name: 🇰🇷 韩国 | KOR 2
   server: 54.180.133.191
@@ -385,18 +243,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: ❓未知丨yoyapai.com_61
+- name: 🇩🇪DE德国丨yoyapai.com_10
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  servername: www.lamer.com.sg
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: ios
   reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
@@ -474,18 +332,17 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   skip-cert-verify: false
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: funagfrdfs.alixxplay.com
-  port: 54528
+- name: 🇩🇪 德国 | DEU 6
+  server: 5.129.222.115
+  port: 443
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: ios
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: ad7.vkusnews.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 4
@@ -502,12 +359,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 43.201.148.241
-  port: 2096
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
+- name: 🇱🇰LK斯里兰卡丨yoyapai.com
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  skip-cert-verify: false
   udp: true
 - name: 🇳🇱NL荷兰丨yoyapai.com
   type: vless
@@ -628,43 +491,34 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸US美国丨yoyapai.com_14
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com_1
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 2
-  - 🇷🇺 俄罗斯 | RUS 6
   - 🇬🇧 英国 | GBR 4
   - 🇮🇳 印度 | IND
   - 🇨🇦 加拿大 | CAN 2
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇰🇷 韩国 | KOR 2
   - 🇮🇷 伊朗 | IRN
   - 🇩🇪 德国 | DEU 7
-  - ❓未知丨yoyapai.com_61
+  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇨🇦 加拿大 | CAN
   - ❓未知丨yoyapai.com_46
-  - 🇦🇺 澳大利亚 | AUS
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪 德国 | DEU 4
-  - 🇰🇷 韩国 | KOR
+  - 🇱🇰LK斯里兰卡丨yoyapai.com
   - 🇳🇱NL荷兰丨yoyapai.com
   - ❓未知丨yoyapai.com_12
   - ❓未知丨yoyapai.com_48
@@ -680,45 +534,36 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸US美国丨yoyapai.com_14
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com_1
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_1
-  - ❓未知丨yoyapai.com_48
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 5
-  - 🇩🇪DE德国丨yoyapai.com_10
-  - 🇬🇧 英国 | GBR
+  - ❓未知丨yoyapai.com_48
   - 🇺🇸US美国丨yoyapai.com_14
   - 🇺🇸 美国 | USA 8
-  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
