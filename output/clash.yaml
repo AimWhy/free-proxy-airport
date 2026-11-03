@@ -7,21 +7,23 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-03T18:31:04.346805+00:00'
+generated-at: '2026-11-03T23:35:21.716387+00:00'
 proxies:
-- type: vless
-  name: 🇭🇰HK香港丨yoyapai.com (16)
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  servername: hk010.zestapp778.com
-  sni: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇭🇰 香港 | HKG 6
   server: 68.64.179.129
+  port: 443
+  type: trojan
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  sni: api.85s.me
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: api.85s.me
+  udp: true
+- name: 🇯🇵 日本 | JPN 5
+  server: 172.238.29.97
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -46,18 +48,18 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇯🇵 日本 | JPN 5
-  server: 172.238.29.97
-  port: 443
-  type: trojan
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  sni: api.85s.me
+- name: 🇭🇰 香港 | HKG 4
+  server: 47.244.120.197
+  port: 36703
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: api.85s.me
+    path: /arki
   udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: 104.18.35.86
@@ -111,8 +113,8 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 54.249.160.228
+- name: 🇸🇬 新加坡 | SGP
+  server: 172.104.57.237
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -124,8 +126,8 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 172.104.57.237
+- name: 🇯🇵 日本 | JPN 4
+  server: 54.249.160.228
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -149,6 +151,22 @@ proxies:
     path: /
     headers:
       Host: api.85s.me
+  udp: true
+- name: 🇭🇰 香港 | HKG 9
+  server: rhHiErkwRf6fHs2H.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rhHiErkwRf6fHs2H.v.3dns.vip
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: cucc.cloudflare.seeck.cn
@@ -203,19 +221,6 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 193.163.19.232
-  port: 443
-  type: trojan
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  sni: api.85s.me
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: api.85s.me
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 172.67.151.38
@@ -296,19 +301,6 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 216.38.170.103
-  port: 443
-  type: trojan
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  sni: api.85s.me
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: api.85s.me
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 104.18.0.3
   port: 443
@@ -362,8 +354,8 @@ proxies:
   reality-opts:
     public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
     short-id: 257420d9d430152a
-- name: 🇺🇸 美国 | USA 2
-  server: 104.21.0.7
+- name: 🇺🇸 美国 | USA 12
+  server: 179.253.255.184
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -375,8 +367,8 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 179.253.255.184
+- name: 🇺🇸 美国 | USA 2
+  server: 104.21.0.7
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -410,6 +402,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
+- type: vless
+  name: ❓未知丨yoyapai.com (44)
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  servername: ccc.010304.xyz
+  sni: ccc.010304.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇩🇪 德国 | DEU 2
   server: finlandlanzarotte.live
   port: 443
@@ -432,21 +439,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: vless
-  name: ❓未知丨yoyapai.com (44)
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  servername: ccc.010304.xyz
-  sni: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: 5.129.202.80
   port: 443
@@ -461,6 +453,24 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- type: vless
+  name: ❓未知丨yoyapai.com (19)
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  sni: dey.lnmarketplace.net
+  skip-cert-verify: false
+  alpn:
+  - h2
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.90
   port: 19999
@@ -629,8 +639,8 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 119.28.150.58
+- name: 🇫🇷 法国 | FRA
+  server: 104.26.0.3
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -655,8 +665,8 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 104.26.0.3
+- name: 🇰🇷 韩国 | KOR
+  server: 119.28.150.58
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -670,19 +680,6 @@ proxies:
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 104.27.0.2
-  port: 443
-  type: trojan
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  sni: api.85s.me
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: api.85s.me
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 104.27.0.8
   port: 443
   type: trojan
   password: 8deb189a-3aed-4865-843b-b72dae954c46
@@ -720,15 +717,19 @@ proxies:
     headers:
       Host: api.85s.me
   udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (7)
-  server: 202.50.253.36
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
+- name: 🇫🇷 法国 | FRA 2
+  server: 104.27.0.8
+  port: 443
+  type: trojan
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  sni: api.85s.me
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: api.85s.me
   udp: true
-  tls: false
-  skip-cert-verify: false
 - type: vless
   name: 🇩🇪DE德国丨yoyapai.com (12)
   server: 169.40.42.229
@@ -744,6 +745,29 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
+- type: ss
+  name: ❓未知丨yoyapai.com (7)
+  server: 202.50.253.36
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: vless
+  name: 🇩🇪DE德国丨yoyapai.com (31)
+  server: de15.h1cloud.net
+  port: 25362
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
+  udp: true
+  tls: true
+  servername: www.chip.de
+  sni: www.chip.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
 - type: ss
   name: ❓未知丨yoyapai.com (6)
   server: 202.50.253.27
@@ -768,6 +792,13 @@ proxies:
   reality-opts:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (14)
   server: 202.50.253.54
@@ -777,13 +808,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 147.45.108.45
   port: 443
@@ -797,15 +821,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (10)
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - name: 🇪🇸 西班牙 | ESP
   server: 156.252.229.136
   port: 8443
@@ -819,45 +834,54 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (10)
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰HK香港丨yoyapai.com (16)
   - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 2
   - 🇯🇵 日本 | JPN 5
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 9
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇭🇰 香港 | HKG 8
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com (19)
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
   - ❓未知丨yoyapai.com (5)
+  - ❓未知丨yoyapai.com (44)
   - 🇩🇪 德国 | DEU 2
   - ❓未知丨yoyapai.com (11)
-  - ❓未知丨yoyapai.com (44)
   - 🇪🇪 爱沙尼亚 | EST 2
+  - ❓未知丨yoyapai.com (19)
   - 🇮🇹 意大利 | ITA 2
   - 🇳🇱荷兰丨yoyapai.com (3)
   - 🇳🇱 荷兰 | NLD
@@ -872,32 +896,34 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
-  - 🇰🇷 韩国 | KOR
-  - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 2
-  - 🇫🇷 法国 | FRA 2
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
-  - ❓未知丨yoyapai.com (7)
+  - 🇫🇷 法国 | FRA 2
   - 🇩🇪DE德国丨yoyapai.com (12)
+  - ❓未知丨yoyapai.com (7)
+  - 🇩🇪DE德国丨yoyapai.com (31)
   - ❓未知丨yoyapai.com (6)
   - 🇮🇳IN印度丨yoyapai.com (2)
-  - ❓未知丨yoyapai.com (14)
   - 🇮🇹 意大利 | ITA 3
+  - ❓未知丨yoyapai.com (14)
   - 🇳🇱 荷兰 | NLD 5
-  - ❓未知丨yoyapai.com (10)
   - 🇪🇸 西班牙 | ESP
+  - ❓未知丨yoyapai.com (10)
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港丨yoyapai.com (16)
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 8
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -913,38 +939,36 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com (19)
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
   - ❓未知丨yoyapai.com (44)
+  - 🇺🇸 美国 | USA 9
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇩🇪DE德国丨yoyapai.com (12)
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇺🇸 美国 | USA 2
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇸🇪 瑞典 | SWE
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 14
   - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 6
-  - 🇸🇪 瑞典 | SWE
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇸🇪 瑞典 | SWE 2
-  - 🇺🇸 美国 | USA 2
-  - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇭🇰 香港 | HKG 3
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇺🇸 美国 | USA 14
+  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
